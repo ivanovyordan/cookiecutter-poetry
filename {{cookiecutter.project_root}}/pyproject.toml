@@ -9,7 +9,7 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-{{ cookiecutter.project_slug }} = "{{ cookiecutter.project_slug }}:main"
+{{ cookiecutter.project_root }} = "{{ cookiecutter.project_root }}:main"
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_version }}"
@@ -21,13 +21,14 @@ line-length = 120
 
 [tool.isort]
 atomic = true
+case_sensitive = true
+force_grid_wrap = 0
+include_trailing_comma = true
 line_length = 120
 multi_line_output = 3
-include_trailing_comma = true
-force_grid_wrap = 0
-use_parentheses = true
 order_by_type = true
-case_sensitive = true
+profile = "black"
+use_parentheses = true
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
