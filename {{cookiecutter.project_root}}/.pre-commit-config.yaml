@@ -35,7 +35,7 @@ repos:
         types:
           - python
         args:
-          - '--check-only'
+          - --check-only
 
       - id: black
         name: black
@@ -51,6 +51,5 @@ repos:
         name: flake8
         entry: poetry run flake8
         language: system
-        additional_dependencies: [flake8-bugbear]
         types:
           - python
