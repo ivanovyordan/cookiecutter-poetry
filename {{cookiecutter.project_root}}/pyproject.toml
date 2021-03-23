@@ -9,7 +9,7 @@ packages = [
 ]
 
 [tool.poetry.scripts]
-{{ cookiecutter.project_slug }} = "{{ cookiecutter.project_slug }}:main"
+{{ cookiecutter.project_root }} = "{{ cookiecutter.project_root }}:main"
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_version }}"
