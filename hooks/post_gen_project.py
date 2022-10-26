@@ -7,13 +7,13 @@ def remove_file(filepath):
 
 
 os.system("poetry install")
-os.system("poetry add --dev {{ cookiecutter.dev_dependencies }}")
+os.system("poetry add --group dev {{ cookiecutter.dev_dependencies }}")
 
 if "{{ cookiecutter.dependencies }}" != "":
     os.system("poetry add {{ cookiecutter.dependencies }}")
 
-if 'Not open source' == '{{ cookiecutter.open_source_license }}':
-        remove_file('LICENSE')
+if "Not open source" == "{{ cookiecutter.open_source_license }}":
+    remove_file("LICENSE")
 
 os.system("git init .")
 os.system("poetry run pre-commit install")

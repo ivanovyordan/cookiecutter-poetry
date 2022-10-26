@@ -14,10 +14,13 @@ packages = [
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_version }}"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 
 [tool.black]
 line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
 
 [tool.isort]
 atomic = true
