@@ -6,7 +6,7 @@
   "python_version": "3.10",
   "author_name": "Yordan Ivanov",
   "author_email": "mail@ivanovyordan.com",
-  "dev_dependencies": "pytest black flake8 isort pre-commit mypy",
+  "dev_dependencies": "pytest black flake8 isort pre-commit mypy python-dotenv",
   "dependencies": "",
   "open_source_license": [
     "MIT license",
