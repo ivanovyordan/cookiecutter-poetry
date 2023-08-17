@@ -15,6 +15,7 @@ if "{{ cookiecutter.dependencies }}" != "":
 if "Not open source" == "{{ cookiecutter.open_source_license }}":
     remove_file("LICENSE")
 
+os.system("touch .env")
 os.system("git init .")
 os.system("poetry run pre-commit install")
 os.system("git add .")
